@@ -51,7 +51,7 @@ pnpm install -D hardhat-deploy
 If you have any issues, refer back to the [`hardhat` directory](https://github.com/CESSProject/cess-course/tree/main/examples/hardhat), its [`package.json`](https://github.com/CESSProject/cess-course/blob/main/examples/hardhat/package.json), and [`hardhat.config.ts`](https://github.com/CESSProject/cess-course/blob/main/examples/hardhat/hardhat.config.ts).
 
 
-如果您有任何问题，请查看 [`hardhat`目录](https://github.com/CESSProject/cess-course/tree/main/examples/hardhat) 及其配置 [`package.json`](https://github.com/CESSProject/cess-course/blob/main/examples/hardhat/package.json)，和 [`hardhat.config.ts`](https://github.com/CESSProject/cess-course/blob/main/examples/hardhat/hardhat.config.ts) 档案。
+如果您有任何问题，请查看 [`hardhat`目录](https://github.com/CESSProject/cess-course/tree/main/examples/hardhat)及其配置 [`package.json`](https://github.com/CESSProject/cess-course/blob/main/examples/hardhat/package.json)，和 [`hardhat.config.ts`](https://github.com/CESSProject/cess-course/blob/main/examples/hardhat/hardhat.config.ts) 档案。
 
 ## 开发
 
@@ -178,7 +178,7 @@ If you have any issues, refer back to the [`hardhat` directory](https://github.c
     }
     ```
 
-3. 现在，我们可以按照 [部署 Solidity 智能合约](./deploy-sc-solidity.md) 的教程, 部署合约到本地 CESS 节点上。
+3. 现在，我们可以按照[部署 Solidity 智能合约](./deploy-sc-solidity.md)的教程, 部署合约到本地 CESS 节点上。
 
     - 在本地运行起 CESS 节点。
     - 准备好四个帐户及其地址。有关详细信息，请参阅 [Substrate EVM 之间地址互换](../guides/substrate-evm.md).
@@ -206,9 +206,9 @@ If you have any issues, refer back to the [`hardhat` directory](https://github.c
 - 安装 [pnpm](https://pnpm.io/installation)
 - 运行 CESS 节点的本地开发链，因为前端将连接到本地 CESS链。请 [参阅此处](./deploy-sc-ink.md#deploy-a-smart-contract) 了解如何运行本地 CESS 链。
 
-完整的前端源代码可以在 [这里看到](https://github.com/CESSProject/cess-course/tree/main/examples/frontend)。
+完整的前端源代码可以在[这里看到](https://github.com/CESSProject/cess-course/tree/main/examples/frontend)。
 
-如果运行它，您将在右下角看到 **存在性证明（Solidity）小部件**：
+如果运行它，您将在右下角看到**存在性证明（Solidity）小部件**：
 
 ![前端模版 PoE-Solidity](../../assets/developer/tutorials/poe-solidity/poe-solidity.png)
 
@@ -286,12 +286,12 @@ If you have any issues, refer back to the [`hardhat` directory](https://github.c
 
 # 教程完成
 
-**恭喜，您已顺利完成本教程**！ 让我们回顾一下本教程：
+**恭喜，您已顺利完成本教程**！让我们回顾一下本教程：
 
 - 您已成功在 Solidity 智能合约中实现了 PoE 逻辑，并将其部署在本地 CESS 节点上。
 - 通过使用 Substrate 前端模板和 **wagmi** React hook 库，您成功实现了与智能合约交互的前端。
 
-现在，您可以构建 dApp 并将其部署在 CESS 测试网上进行测试。也可以尝试 [使用 Ink! 开发 dApp 智能合约](./poe-ink.md)。
+现在，您可以构建 dApp 并将其部署在 CESS 测试网上进行测试。也可以尝试[使用 Ink! 开发 dApp 智能合约](./poe-ink.md)。
 
 ## 参考文档
 
