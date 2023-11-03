@@ -23,11 +23,11 @@
 </details>
 
 <details>
-  <summary>无法找到 docker 庫</summary>
+  <summary>无法找到 docker 库</summary>
 
   如果安装时出现如下错误 `cess-nodeadm`：
 
-  <img alt="Docker 庫問題" src="../assets/storage-miner/troubleshooting/docker-package-issue.webp" width="100%" height="auto" decoding="async" style="max-width: 100%;" />
+  <img alt="Docker 库問題" src="../assets/storage-miner/troubleshooting/docker-package-issue.webp" width="100%" height="auto" decoding="async" style="max-width: 100%;" />
 
   尝试使用以下命令删除 Docker：
 
