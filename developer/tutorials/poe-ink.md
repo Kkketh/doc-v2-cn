@@ -10,7 +10,7 @@
 
 {% hint style="success" %}
 
-本教程的完整代码可在 [代码库](https://github.com/CESSProject/cess-course/tree/main/examples) 查看。
+本教程的完整代码可在[代码库](https://github.com/CESSProject/cess-course/tree/main/examples)查看。
 
 - 智能合约部分，位于 [`examples/ink/poe` 目录](https://github.com/CESSProject/cess-course/tree/main/examples/ink/poe).
 - 前端部分，位于 [`src/ProofOfExistenceInk.js`](https://github.com/CESSProject/cess-course/blob/main/examples/frontend/src/ProofOfExistenceInk.js).
@@ -23,7 +23,7 @@
 
 ## 准备条件
 
-本教程与教程 [《部署 ink 智能合约》](./deploy-sc-ink.md#prerequisite) 的准备条件一致，请按照那部分进行操作，安装所有必需的组件：Rust 和 `cargo-contract`。
+本教程与教程[《部署 ink 智能合约》](./deploy-sc-ink.md#prerequisite)的准备条件一致，请按照那部分进行操作，安装所有必需的组件：Rust 和 `cargo-contract`。
 
 ## 开发
 
@@ -294,7 +294,7 @@
 
 10. 至此，您已经完成了智能合约的所有核心逻辑。编译合约 `cargo contract build` 以确保其能构建。如果对最终的源代码有任何疑问，您可以随时参考[完整的源代码](https://github.com/CESSProject/cess-course/blob/main/examples/ink/poe/lib.rs)。
 
-11. 编译完成后，将合约 [部署到本地的 CESS 开发节点上](./deploy-sc-ink.md) 并与合约交互以对其进行测试。您可以访问 [Contracts UI](https://contracts-ui.substrate.io/)，将其连接到本地节点，然后部署合约。请参阅下面的屏幕截图。<br/>
+11. 编译完成后，将合约[部署到本地的 CESS 开发节点上](./deploy-sc-ink.md) 并与合约交互以对其进行测试。您可以访问 [Contracts UI](https://contracts-ui.substrate.io/)，将其连接到本地节点，然后部署合约。请参阅下面的屏幕截图。<br/>
 
     ![部署 PoE Ink! 合约](../../assets/developer/tutorials/poe-ink/deploy-poe-contract.png)
 
@@ -303,7 +303,7 @@
     - 合约 UI 正在连接到本地 CESS 节点。
     - 上传 `contract.contract` 文件时, 看到预期的元数据。
 
-**恭喜**！您已经完成了智能合约开发部分。在进行前端开发之前，完整的源代码还包含单元测试代码，里面的代码块 `mod tests { ... }`。我们不在此处赘述，您可以通过 `cargo test` 命令运行它们。请 [查看此处](https://use.ink/basics/contract-testing) 以了解有关合约测试的更多信息。
+**恭喜**！您已经完成了智能合约开发部分。在进行前端开发之前，完整的源代码还包含单元测试代码，里面的代码块 `mod tests { ... }`。我们不在此处赘述，您可以通过 `cargo test` 命令运行它们。请[查看此处](https://use.ink/basics/contract-testing)以了解有关合约测试的更多信息。
 
 # 前端
 
@@ -313,7 +313,7 @@
 - 安装 [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 - 安装 [Node v18](https://nodejs.org/en/download)
 - 安装 [pnpm](https://pnpm.io/installation), or your favorite package manager
-- 运行 CESS 节点的本地开发链，因为前端将连接到本地CESS链。请参阅此处了解 [如何运行本地 CESS 链](./deploy-sc-ink.md#deploy-a-smart-contract).
+- 运行 CESS 节点的本地开发链，因为前端将连接到本地CESS链。请参阅此处了解[如何运行本地 CESS 链](./deploy-sc-ink.md#deploy-a-smart-contract).
 
 我们将从 [Substrate Front End Template](https://github.com/CESSProject/substrate-front-end-template) 开始修改。
 
@@ -400,7 +400,7 @@ function Main() {
 3. 组件 `<Metadata />`, 引用 `src/Metadata.js`.
 4. 组件 `<Balances />`, 引用 `src/Balances.js`.
 
-我们将添加一个新组件并展示如何使用 [**useink** Javascript 库](https://www.npmjs.com/package/useink) 将前端连接到智能合约。
+我们将添加一个新组件并展示如何使用 [**useink** Javascript 库](https://www.npmjs.com/package/useink)将前端连接到智能合约。
 
 ## 开发
 
@@ -526,7 +526,7 @@ function Main() {
       fileReader.readAsArrayBuffer(file);
     };
     ```
-    我们使用[`FileReader`](https://developer.mozilla.org/en-US/docs/Web/API/FileReader) 现代浏览器都有提供的 JS API 来读取上传的文件，提取前 64 kB，并使用 [**@polkadot/util-crypto**](https://polkadot.js.org/docs/util-crypto/examples/hash-data) 库提供的 `blake2AsHex()` [Blake2 加密哈希函数](https://en.wikipedia.org/wiki/BLAKE_(hash_function)#BLAKE2) 来计算其哈希摘要。
+    我们使用[`FileReader`](https://developer.mozilla.org/en-US/docs/Web/API/FileReader) 现代浏览器都有提供的 JS API 来读取上传的文件，提取前 64 kB，并使用 [**@polkadot/util-crypto**](https://polkadot.js.org/docs/util-crypto/examples/hash-data) 库提供的 `blake2AsHex()` [Blake2 加密哈希函数](https://en.wikipedia.org/wiki/BLAKE_(hash_function)#BLAKE2)来计算其哈希摘要。
 
 7. 然后，我们还扩展了一些辅助组件 **TxButton**、**ConnectWallet** 和 **WalletSwitcher** 来展示 UI。
 
@@ -552,7 +552,7 @@ function Main() {
 - 您已成功用 ink! 智能合约实现了 PoE 逻辑并将其部署在本地 CESS 节点上。
 - 从使用 Substrate 前端模板 和 **useink** React 库开始，您已经成功实现了与智能合约交互的前端。
 
-现在，您可以构建 dApp 并将其部署在 CESS 测试网上进行测试。下一步，您还可以学习如何 [开发 Solidity 智能合约的 dApp](./poe-solidity.md)。
+现在，您可以构建 dApp 并将其部署在 CESS 测试网上进行测试。下一步，您还可以学习如何[开发 Solidity 智能合约的 dApp](./poe-solidity.md)。
 
 ## 参考文档
 
